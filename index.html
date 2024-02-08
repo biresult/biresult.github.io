@@ -43,8 +43,8 @@
         <!-- You can change your logo name -->
         <li class="font-mono text-xl">
           <a href="./index.html">
-          Result
-        </a>
+            Result
+          </a>
         </li>
       </ul>
       <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
@@ -110,6 +110,9 @@
             </li>
           </ul>
         </li>
+        <li class="font-medium">
+          <a href="#link5">Acesso ERP</a>
+        </li>
       </ul>
     </nav>
     <!-- Side Menu ends here -->
@@ -118,14 +121,13 @@
       <!-- Link1 start -->
       <section id="link1">
         <div class="h-full mt-10">
-          <p class="font-normal text-2xl">Getting Started</p>
+          <p class="font-normal text-2xl">Documentação BI Result</p>
           <p class="leading-0 w-3/4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            quae similique nostrum, laborum, velit beatae esse nobis dolorem
-            saepe quas iste provident iusto assumenda facilis quisquam enim
-            quo. Beatae, fuga!
+            Este guia tem como objetivo ajudá-lo a configurar uma Máquina Virtual (VM) Windows para executar o Gateway do Power BI. Siga as instruções abaixo para garantir uma configuração adequada.
           </p>
-          <p class="text-sm pt-5 pb-4">Small Description</p>
+          <p class="text-sm pt-5 pb-4">Se o seu banco de dados não estiver listado na documentação ou se você tiver alguma dúvida sobre a integração com nosso sistema, não hesite em entrar em contato conosco. <br>
+          Estamos aqui para ajudar e podemos fornecer orientações personalizadas para integrar seu banco de dados com nossa plataforma. <br>
+          Entre em contato conosco através dos canais de suporte fornecidos, e nossa equipe terá prazer em ajudá-lo a encontrar a melhor solução para suas necessidades de integração.</p>
         </div>
       </section>
       <!-- Link1 end -->
@@ -134,25 +136,49 @@
       <section id="link2">
         <div class="h-full mt-5">
           <p class="font-normal text-2xl">Banco de Dados</p>
-          <p class="text-sm pb-4">Informações necessárias para conexão com banco de dados</p>
+          <p class="text-sm pb-4">Abaixo, você encontrará as informações necessárias para cada um desses bancos de
+            dados.</p>
         </div>
         <section id="link2_1" class="border-l-[2px]">
           <div class="h-full mt-3 ml-5">
             <p class="font-normal text-xl">Oracle</p>
-            <p class="text-sm pb-4">Fork and clone the github repository.</p>
+            <br>
+            <ul>
+              <li><strong>Hostname (Nome do Host)</strong></li>
+              <li><strong>Porta</strong></li>
+              <li><strong>Nome do Serviço/SID</strong></li>
+              <li><strong>Nome de Usuário</strong></li>
+              <li><strong>Senha</strong></li>
+            </ul>
           </div>
         </section>
         <section id="link2_2" class="border-l-[2px]">
           <div class="h-full mt-5 ml-5">
             <p class="font-normal text-xl">Postgres</p>
-            <p class="text-sm pb-4">Fork and clone the github repository.</p>
+            <br>
+            <ul>
+              <li><strong>Hostname (Nome do Host)</strong> </li>
+              <li><strong>Porta</strong> </li>
+              <li><strong>Nome do Banco de Dados</strong> </li>
+              <li><strong>Nome de Usuário</strong> </li>
+              <li><strong>Senha</strong> </li>
+            </ul>
           </div>
         </section>
-        <section id="link2_3" class="border-l-[2px]">
+        <section id="link2_3" >
+          <section class="border-l-[2px]">
           <div class="h-full mt-5 ml-5">
             <p class="font-normal text-xl">SqlServer</p>
-            <p class="text-sm pb-4">Fork and clone the github repository.</p>
+            <br>
+            <ul>
+              <li><strong>Nome do Servidor</strong> </li>
+              <li><strong>Porta</strong> </li>
+              <li><strong>Nome do Banco de Dados</strong> </li>
+              <li><strong>Nome de Usuário</strong> </li>
+              <li><strong>Senha</strong> </li>
+            </ul>
           </div>
+        </section>
         </section>
       </section>
       <!-- Link2 Ends -->
@@ -164,8 +190,18 @@
           <p class="leading-0 w-3/4">
             Dados para acesso da VPN (Se disponível)
           </p>
-          <p class="text-sm pt-5 pb-4">Small Description</p>
+          <section class="border-l-[2px]">
+          <div class="h-full mt-5 ml-5">
+            <ul>
+              <li><strong>Endereço do Servidor VPN:</strong> </li>
+              <li><strong>Tipo de VPN:</strong> [SSL VPN, IPSec, PPTP, etc.] </li>
+              <li><strong>Nome de Usuário:</strong> </li>
+              <li><strong>Senha:</strong> </li>
+              <li><strong>Chave de Autenticação (se aplicável):</strong> </li>
+            </ul>
+          </div>
         </div>
+      </section>
       </section>
       <!-- Link3 end -->
 
@@ -173,18 +209,45 @@
       <section id="link4">
         <div class="h-full mt-5">
           <p class="font-normal text-2xl">Acesso Remoto</p>
+          <h1>Documentação: VM Windows para o Gateway do Power BI</h1>
           <section id="link4_1" class="border-l-[2px]">
             <div class="h-full mt-5 ml-5">
-              <p class="font-normal text-xl">Requisitos</p>
-              <p class="text-sm pb-4">X GB RAM</p>
+              <p>Criar uma Máquina Virtual (VM) Windows capaz de executar o Gateway do Power BI.</p>
+              <br>
+              <h2><strong>Requisitos da Máquina:</strong></h2>
+              <br>
+              <ul>
+                <li><strong>Sistema Operacional:</strong> Windows (compatível com Windows 8 ou superior)</li>
+                <li><strong>CPU:</strong> 8 Núcleos (Recomendado)</li>
+                <li><strong>Memória RAM:</strong> Recomendado 8GB ou superior</li>
+                <li><strong>Armazenamento:</strong> 50 GB</li>
+                <li><strong>Conectividade:</strong> Acesso à Internet para download e registro do Gateway</li>
+                <li><strong>Software:</strong> .NET Framework 4.8</li>
+              </ul>
             </div>
           </section>
         </div>
       </section>
       <!-- Link4 end -->
+      <section id="link5">
+        <div class="h-full mt-5">
+          <p class="font-normal text-2xl">ERP</p>
+          <h1>Documentação para acesso ao sistema</h1>
+          <h1>O acesso é importante para validação dos dados.</h1>
+          <section id="link5_1" class="border-l-[2px]">
+            <div class="h-full mt-5 ml-5">
+              <ul>
+                <li><strong>Usuário</strong></li>
+                <li><strong>Senha</strong></li>
+                <li><strong>Acesso ao sistema</strong> (Web ou Executável)</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
       <!-- code block  -->
-        </section>
-        <!-- Cards ends -->
+      </section>
+      <!-- Cards ends -->
       </section>
       <!-- Link4 end -->
     </div>
@@ -195,19 +258,10 @@
       <div tabindex="0" aria-label="footer"
         class="focus:outline-none mx-auto container flex flex-col items-center justify-center">
         <div class="text-black flex flex-col md:items-center f-f-l pt-0">
-          <div class="my-6 text-base text-color f-f-l">
-            <ul class="md:flex items-center">
-              <li class="cursor-pointer pt-4 lg:py-0">
-                <a href="./index.html"
-                  class="text-white dark:text-black focus:outline-none focus:underline hover:text-gray-200">Home
-                </a>
-              </li>
-            </ul>
-          </div>
           <div class="text-sm text-color mb-10 f-f-l">
             <!-- Rename cleandocs with your respective name -->
             <p tabindex="0" class="text-white dark:text-black focus:outline-none">
-              &copy; 2022 Cleandocs. All rights reserved
+              &copy; 2024 BI Result
             </p>
           </div>
         </div>
